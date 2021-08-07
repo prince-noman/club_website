@@ -255,11 +255,11 @@ body {
 	@keyframes slide {
 		0% {
 			position: relative;
-			right: -20px;
+			right: -40px;
 		}
 		100% {
 			position: relative;
-			right: 20px;
+			right: 15px;
 		}
 	}
 	.players {
