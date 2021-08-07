@@ -2,6 +2,9 @@ body {
 	font-family: "Poppins", sans-serif;
 	margin: 0;
 }
+
+/* Banner CSS */
+
 .banner {
 	background-color: #2d25a0;
 	display: flex;
@@ -36,8 +39,23 @@ body {
 	width: 48%;
 }
 .banner_photo img {
-	width: 100%;
+	width: 90%;
+	transition: transform 0.5s;
+	animation: slide 2s infinite alternate;
 }
+@keyframes slide {
+	0% {
+		position: relative;
+		right: 0;
+	}
+	100% {
+		position: relative;
+		right: 100px;
+	}
+}
+
+/* Player CSS */
+
 .players {
 	padding: 100px 150px;
 	display: grid;
@@ -67,6 +85,9 @@ body {
 	font-weight: 400;
 	color: #6c6c6c;
 }
+
+/* Highlights CSS */
+
 .highlights_section {
 	display: flex;
 	justify-content: space-between;
@@ -94,6 +115,9 @@ body {
 .highlights_photo img {
 	width: 100%;
 }
+
+/* History CSS */
+
 .history h2,
 .newsletter h2 {
 	text-align: center;
@@ -130,6 +154,8 @@ body {
 	color: #6c6c6c;
 }
 
+/* Newsletter CSS */
+
 .form_section {
 	background-color: #2d25a0;
 	padding: 50px 150px;
@@ -159,6 +185,8 @@ body {
 .fa-paper-plane {
 	margin-left: 10px;
 }
+
+/* Footer CSS */
 
 .footer_section {
 	display: flex;
@@ -223,6 +251,16 @@ body {
 	}
 	.banner_photo img {
 		margin-top: 50px;
+	}
+	@keyframes slide {
+		0% {
+			position: relative;
+			right: -20px;
+		}
+		100% {
+			position: relative;
+			right: 20px;
+		}
 	}
 	.players {
 		padding: 15px;
